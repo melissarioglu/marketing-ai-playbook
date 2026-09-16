@@ -176,7 +176,3 @@ looks productive and ships risk; the rejection log is the audit trail
 that proves the gate ran.
 ````
 
----
-
-İki tasarım notu: (1) **Negative constraints artık tek yerde** — intake-sheet §C. Önceki versiyonda hem orada hem supervisor prompt'unda vardı; kopya kurallar sürüklenir, tek kaynak kuralı sistemin kendi prensibiyle aynı. (2) **v1→v2→v3 hikayesi 02'ye de eklendi** — mülakatta "bunu nasıl kurduk" sorusunun cevabı artık dosyanın başında.
-
