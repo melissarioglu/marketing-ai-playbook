@@ -1,4 +1,4 @@
-## 📄 Dosya 7/22 — `01-case-study-generator/prompt-chain.md`
+## `01-case-study-generator/prompt-chain.md`
 
 *(Önce küçük patch: dosya 6'daki Results listesinin sonuna şu satırı ekle — 5'li minimum bar ile örnek input'un tutarlılığı için)*
 
