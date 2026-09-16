@@ -1,0 +1,44 @@
+##`03-reporting-agent/data/campaign-performance.csv`
+
+*(Dosya 18'deki yeni hizalı rakamlara göre — her satır dosya 18'deki verification log'una ve eşik hikayesine denetledim, aşağıda tablo halinde kanıtı var)*
+
+```csv
+# SCHEMA NOTE (referenced by troubleshooting #4 in narrative-generation-prompt.md)
+# One row per week x region x channel. Regions are non-overlapping (GCC, LEVANT).
+# RULE: never add a rollup row (e.g. "MEA, paid-social, 314") alongside its
+# component rows — totals are computed, never stored. That is failure mode #4.
+# spend_usd = 0 marks organic channels. Paste data rows only into the prompt.
+week,region,channel,leads,spend_usd,ctr_pct,conv_rate_pct
+2025-W44,GCC,paid-social,190,9800,2.1,3.3
+2025-W45,GCC,paid-social,119,9600,1.5,2.9
+2025-W44,LEVANT,paid-social,124,5200,1.8,2.9
+2025-W45,LEVANT,paid-social,136,5300,1.9,3.1
+2025-W44,GCC,organic-search,168,0,2.4,4.5
+2025-W45,GCC,organic-search,163,0,2.4,4.6
+2025-W44,LEVANT,organic-search,100,0,2.5,4.4
+2025-W45,LEVANT,organic-search,99,0,2.6,4.3
+```
+
+### Hizalama denetimi (neden bu rakamlar)
+
+Sentetik verinin kendisi "verification" vaadinin testi — sıkı bir okuyucu çarpım/yüzde testi yapacak. Her satırı dosya 18'deki örnek çıktıya ve ±10% eşiğine karşı denetledim:
+
+| Hareket | Hesap | Sonuç | Rapor davranışı |
+|---|---|---|---|
+| GCC paid leads | 119/190 − 1 = **−37.4%** | Eşiğin ötesinde | Listelenir ✓ |
+| GCC CTR | 1.5/2.1 − 1 = **−28.6%** | Eşiğin ötesinde | Hipotezin kanıtı ✓ |
+| GCC conv | 2.9/3.3 − 1 = **−12.1%** | Eşiğin ötesinde | İkincil sinyal ✓ |
+| GCC spend | 9600/9800 − 1 = **−2.0%** | Düz | Kontrol değişkeni (dosya 18'deki not) ✓ |
+| LEVANT paid leads | 136/124 − 1 = **+9.7%** | Eşiğin *altında* | Sessizlik — config kararı ✓ |
+| LEVANT paid CTR | 1.9/1.8 − 1 = **+5.6%** | Altında | Sessizlik ✓ |
+| Bölgesel paid toplam | 314 → 255 = **−18.8%** | Eşiğin ötesinde | Headline ✓ |
+
+Önceki taslakta yakaladığım tuzak: LEVANT CTR'ı ilk denemede 1.7→1.9 (+11.8%) yapmıştım — bu eşiğin **ötesinde** olurdu ve "LEVANT hakkında sessizlik" hikayesini bozulurdu (doğru ajan onu raporlamalıydı). 1.8→1.9'a çekildi. Sentetik veri, sistemin kendi kurallarına tabi.
+
+### 🔧 Patch — Dosya 16 (03 README), files tablosundaki CSV satırı
+
+```markdown
+| `data/campaign-performance.csv` | Synthetic input — 2 weeks × 2 regions × 2 channels, one notable drop for the agent to find; schema note in header comments |
+```
+
+-
