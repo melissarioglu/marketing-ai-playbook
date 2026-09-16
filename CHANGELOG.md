@@ -43,6 +43,4 @@ watch the verification gate catch the bad metric?*
 - Design principles and ground rules
 ````
 
----
 
-**Devam** de → `01-case-study-generator/README.md` geliyor.
