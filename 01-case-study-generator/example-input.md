@@ -1,4 +1,4 @@
-## 📄 Dosya 6/22 — `01-case-study-generator/example-input.md`
+## `01-case-study-generator/example-input.md`
 
 ````markdown
 # Example Input — raw account notes (synthetic)
