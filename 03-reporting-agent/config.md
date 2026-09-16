@@ -42,11 +42,11 @@ follow the prompt, and the reviewer will expect the config.
 
 ## Cadence variants (examples)
 
-| Variant | Notability | Length | Actions |
-|---|---|---|---|
-| Weekly ops | ±15% WoW | 300 words | 3 |
-| Monthly leadership | ±5% MoM | 400 words | 3 |
-| Quarterly review | ±3% QoQ | 600 words | 5 |
+|       Variant      | Notability | Length    | Actions |
+|--------------------|------------|-----------|---------|
+| Weekly ops         | ±15% WoW   | 300 words |       3 |
+| Monthly leadership | ±5% MoM    | 400 words |       3 |
+| Quarterly review   | ±3% QoQ    | 600 words |       5 |
 
 Same contract, different knobs — the report stays comparable across
 cycles because the structure never moves.
