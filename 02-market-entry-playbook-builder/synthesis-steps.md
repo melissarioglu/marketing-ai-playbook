@@ -1,4 +1,4 @@
-## 📄 Dosya 14/22 — `02-market-entry-playbook-builder/synthesis-steps.md`
+##`02-market-entry-playbook-builder/synthesis-steps.md`
 
 ````markdown
 # Synthesis Pipeline: research → freeze → specialists → supervision → PDF
