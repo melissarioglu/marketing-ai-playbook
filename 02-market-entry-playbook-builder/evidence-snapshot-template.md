@@ -1,6 +1,3 @@
-## `02-market-entry-playbook-builder/evidence-snapshot-template.md`
-
-````markdown
 # Evidence Snapshot — the data freeze, as a concrete artifact
 
 The snapshot is a table. That's the whole format.
@@ -71,4 +68,3 @@ knows which sections are evidence-rich and which are directional.
 The freeze log is why hybrid orchestration stays honest: a snapshot
 change doesn't silently propagate — it names exactly which agents'
 outputs are now stale and must be regenerated.
-````

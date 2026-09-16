@@ -1,20 +1,3 @@
-##`03-reporting-agent/narrative-generation-prompt.md`
-
-*(Önce kritik bir tutarlılık düzeltmesi — aşağıda açıklıyorum)*
-
-⚠️ **Patch — Dosya 16 (03 README) "What good looks like" bölümündeki rakamlar değişiyor.** Sebep: sentetik CSV'deki funnel rakamları birbiriyle tutarlı olmalı (CTR × conversion ~ leads oranı). Eski rakamlar sıkı bir okuyucunun çarpım testini geçmiyordu — "verification" vaat eden bir repoda sentetik verinin kendisi doğrulanabilir olmalı. Yeni hizalı set: **GCC 190→119 (-37%), CTR 2.1→1.5, conv 3.3→2.9; LEVANT 124→136 (+9.7%, eşiğin hemen altında); toplam 314→255 (-19%).** Dosya 16'daki cümle şöyle olsun:
-
-```markdown
-The synthetic dataset contains one real signal: regional paid-social
-leads down 19% WoW (314 → 255), driven by GCC (-37%), while organic
-and LEVANT stay within threshold — LEVANT at +9.7%, excluded by the
-config line, not by judgment. A correct run reports the GCC story,
-labels the cause as hypothesis, cites only figures present in the CSV,
-and stays silent about LEVANT. See `narrative-generation-prompt.md`
-for the example output.
-```
-
-````markdown
 # Narrative Generation Prompt — generation and verification as two calls
 
 ## How to run
@@ -186,6 +169,3 @@ states as 2.1 → 1.5.
 | 2 | Self-grading | Verification "passed" in the generation chat | Enforce the two-chat rule; merge = v1 failure mode returns |
 | 3 | Quiet-week padding | Commentary on within-threshold metrics | Quote the CONFIG block at the top of the call — the agent follows the prompt, so the prompt must carry the config |
 | 4 | Double counting | Totals inflated | CSV contains a rollup row *and* its components for the same channel — schema rule: never both (see the schema note in the CSV) |
-````
-
----

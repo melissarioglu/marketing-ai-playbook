@@ -1,6 +1,3 @@
-##`01-case-study-generator/template.md`
-
-````markdown
 # Master Narrative Template — structure Stage 2 must follow
 
 Six sections, fixed order. The rigidity is the feature: every case
@@ -41,5 +38,3 @@ inventing closure.
 
 **Length target:** ~600 words. If it runs long, cut section 4, not
 section 5 — results are the part that gets quoted downstream.
-````
-

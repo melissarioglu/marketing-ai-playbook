@@ -1,6 +1,3 @@
-## `02-market-entry-playbook-builder/README.md`
-
-````markdown
 # 02 · Market-Entry Playbook Builder
 
 ## Problem
@@ -74,6 +71,3 @@ This workflow has a half-day first-run budget — see
 first, then the snapshot freeze, then synthesis steps.
 
 *All data in this folder is synthetic.*
-````
-
----

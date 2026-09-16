@@ -1,6 +1,3 @@
-## 📄 Dosya 9/22 — `01-case-study-generator/example-output.md`
-
-````markdown
 # Example Output (synthetic) — full run on `example-input.md`
 
 Chain: v3 · Input: Nova Apparel account notes (5 sourced metrics,
@@ -129,5 +126,3 @@ snippet — follow the same contract; omitted for brevity.)*
 - [x] Zero unresolved [NEEDED: ...] (no gaps in this run)
 - [x] Each asset fits its channel (post: ~100 words + link line)
 - [x] Verification log archived above
-````
-

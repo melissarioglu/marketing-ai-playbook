@@ -1,6 +1,3 @@
-##  `04-webinar-content-pipeline/promo-content-prompt.md`
-
-````markdown
 # Promo Content Prompt — derivation fan-out from the session brief
 
 ## How this runs
@@ -134,7 +131,12 @@ speaker name/title verbatim ✓ · numbers as in brief ✓ · one CTA ✓ ·
 
 ---
 
-## Live + post-session assets (5-7) — same pattern, source switch
+## Live + post-session assets (5-7) — same pattern, specs not published
+
+**Specs 1-4 above are the runnable part of this folder.** Assets 5-7 use the
+identical base prompt and per-asset call structure with a different source of
+truth; what follows is the pattern and the two structural rules that make it
+work, not copy-ready specs. Treat this section as design notes.
 
 | # | Asset | Source of truth |
 |---|---|---|
@@ -189,4 +191,3 @@ Two structural notes:
 Four workflows, four topologies, one principle: **the architecture is
 the answer to the failure mode.** Pick the shape from what breaks,
 not from what's fashionable.
-````

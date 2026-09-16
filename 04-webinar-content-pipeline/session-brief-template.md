@@ -1,6 +1,3 @@
-## `04-webinar-content-pipeline/session-brief-template.md`
-
-````markdown
 # Session Brief — the single source of truth for all pre-session assets
 
 Fill this BEFORE any promo asset is derived. The brief is the contract:
@@ -107,5 +104,3 @@ frozen as the record of what was promised — which makes the recap
 checkable: did the session deliver what the promo claimed? A takeaway
 the speakers didn't say gets caught here, at the last gate, instead of
 in a customer's memory.
-````
-

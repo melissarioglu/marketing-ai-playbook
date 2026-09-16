@@ -1,6 +1,3 @@
-## `02-market-entry-playbook-builder/example-playbook.md`
-
-````markdown
 # Example (synthetic) — GCC market-entry playbook, excerpt
 
 **Market:** GCC enterprise retail (UAE, KSA) · Meridian Analytics
@@ -117,4 +114,3 @@ holds, and it's checkable in one read.
 
 *Everything above is synthetic — Meridian Analytics, all snapshot
 items, and all figures are fictional.*
-````

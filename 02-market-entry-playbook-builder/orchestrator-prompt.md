@@ -1,6 +1,3 @@
-##`02-market-entry-playbook-builder/orchestrator-prompt.md`
-
-````markdown
 # Orchestrator & Specialist Prompts
 
 ## How this runs
@@ -174,5 +171,3 @@ Rejections are not failures of the system — they are the system
 working. A pricing agent that returns a clean-but-sourceless table
 looks productive and ships risk; the rejection log is the audit trail
 that proves the gate ran.
-````
-

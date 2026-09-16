@@ -1,6 +1,3 @@
-## 📄 Dosya 2/22 — `QUICKSTART.md`
-
-````markdown
 # Quickstart: run your first workflow in ~15 minutes
 
 No setup, no code, no API keys. You need any LLM chat interface
@@ -46,7 +43,7 @@ inventions don't.**
 |---|---|---|
 | 02 Market-entry playbook builder | Fill [intake-sheet.md](02-market-entry-playbook-builder/intake-sheet.md), freeze an evidence snapshot ([template](02-market-entry-playbook-builder/evidence-snapshot-template.md)), then follow [synthesis-steps.md](02-market-entry-playbook-builder/synthesis-steps.md) | Half a day |
 | 03 Reporting agent | Put your data in the schema of [campaign-performance.csv](03-reporting-agent/data/campaign-performance.csv), set thresholds in [config.md](03-reporting-agent/config.md), run [narrative-generation-prompt.md](03-reporting-agent/narrative-generation-prompt.md) — generation and verification are two separate calls | ~30 min |
-| 04 Webinar content pipeline | Fill [session-brief-template.md](04-webinar-content-pipeline/session-brief-template.md), paste the derivation prompt from [promo-content-prompt.md](04-webinar-content-pipeline/promo-content-prompt.md) | ~20 min |
+| 04 Webinar content pipeline | Fill [session-brief-template.md](04-webinar-content-pipeline/session-brief-template.md), then one call per asset using specs 1-4 in [promo-content-prompt.md](04-webinar-content-pipeline/promo-content-prompt.md) | ~20 min |
 
 ## Ground rules (all workflows)
 
@@ -54,4 +51,3 @@ inventions don't.**
    organization hasn't approved.
 2. Every output passes a human gate before it ships.
 3. If a claim can't be traced to the input, it doesn't ship.
-

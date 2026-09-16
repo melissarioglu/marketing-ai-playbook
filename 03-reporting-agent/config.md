@@ -1,6 +1,3 @@
-## `03-reporting-agent/config.md`
-
-````markdown
 # Reporting Config — team-tunable thresholds
 
 The prompt in `narrative-generation-prompt.md` is the **contract** —
@@ -50,4 +47,3 @@ follow the prompt, and the reviewer will expect the config.
 
 Same contract, different knobs — the report stays comparable across
 cycles because the structure never moves.
-````

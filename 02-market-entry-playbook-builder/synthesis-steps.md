@@ -1,6 +1,3 @@
-##`02-market-entry-playbook-builder/synthesis-steps.md`
-
-````markdown
 # Synthesis Pipeline: research → freeze → specialists → supervision → PDF
 
 The whole pipeline, with human gates marked. Commands are written for
@@ -148,5 +145,3 @@ log) ships alongside it.
 | 3 | Overlap ping-pong | Two sections keep trading the same claim | Supervisor assigns a single owning agent in the registry; strike from the other permanently |
 | 4 | Section freeze | One `thin` section blocks the whole assembly | Ship it as thin with open questions — the pipeline is designed for partial evidence, that's what labels are for |
 | 5 | Snapshot vN+1 confusion | Old-citation sections after a re-freeze | Freeze log names affected specialists — re-run only those; others' citations stay valid |
-````
-

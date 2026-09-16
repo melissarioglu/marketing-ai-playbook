@@ -1,6 +1,3 @@
-##  `02-market-entry-playbook-builder/intake-sheet.md`
-
-````markdown
 # Intake Sheet — fill before Stage A (research)
 
 Two rules:
@@ -62,5 +59,3 @@ specific rule that failed.
 **Done means:** every field in A filled, B numbered, C reviewed line
 by line, D frozen. This sheet + the frozen snapshot are the only two
 inputs the specialist agents receive.
-````
-

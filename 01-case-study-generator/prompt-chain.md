@@ -1,12 +1,3 @@
-## `01-case-study-generator/prompt-chain.md`
-
-*(Önce küçük patch: dosya 6'daki Results listesinin sonuna şu satırı ekle — 5'li minimum bar ile örnek input'un tutarlılığı için)*
-
-```markdown
-- Time to first live campaign post-migration: 9 days (vs. ~5 weeks historical)
-```
-
-````markdown
 # Prompt Chain: Case-Study Generator
 
 **The one rule: each stage is a separate call. The structured output of
@@ -157,5 +148,3 @@ across all five formats.
 | 3 | Derivation tone drift | All 5 assets read identical | Add a per-asset voice hint to Stage 3 (e.g. "one-pager: scannable, verb-first") |
 | 4 | Metric drift between formats | Numbers differ across assets | Confirm Stage 3 reads the evidence block, not the narrative |
 | 5 | Long transcript | Input exceeds the context window | Chunk the input, extract per chunk, merge the JSONs, verify the merged block against the full source |
-````
-

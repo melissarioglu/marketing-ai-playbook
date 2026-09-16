@@ -1,6 +1,3 @@
-##`03-reporting-agent/README.md`
-
-````markdown
 # 03 · Reporting Agent
 
 ## Problem
@@ -40,17 +37,17 @@ Three design decisions:
 |---|---|
 | `config.md` | Team-tunable thresholds (kept separate from the prompt contract) |
 | `narrative-generation-prompt.md` | Full prompt + separate verification pass + synthetic example |
-| `data/campaign-performance.csv` | Synthetic input — 2 weeks × 3 regions, with one notable drop for the agent to find |
+| `data/campaign-performance.csv` | Synthetic input — 2 weeks x 2 regions x 2 channels, one notable drop for the agent to find; schema note in header comments |
 
 ## What "good" looks like
 
-The synthetic dataset contains one real signal: MEA paid-social leads
-down 22% WoW, driven by GCC (-38%), while organic holds flat and
-LEVANT moves within threshold. A correct run reports the GCC story,
-labels the cause as hypothesis, cites only figures present in the CSV
-— and stays silent about LEVANT, because the notability threshold
-says it isn't news. See `narrative-generation-prompt.md` for the
-example output.
+The synthetic dataset contains one real signal: regional paid-social
+leads down 19% WoW (314 → 255), driven by GCC (-37%), while organic
+and LEVANT stay within threshold — LEVANT at +9.7%, excluded by the
+config line, not by judgment. A correct run reports the GCC story,
+labels the cause as hypothesis, cites only figures present in the CSV,
+and stays silent about LEVANT. See `narrative-generation-prompt.md`
+for the example output.
 
 ## Acceptance criteria (report is review-ready when...)
 
@@ -67,4 +64,3 @@ your data like `data/campaign-performance.csv`, set thresholds in
 `config.md`, then generation and verification are two separate calls.
 
 *All data in this folder is synthetic.*
-````

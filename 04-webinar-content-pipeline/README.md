@@ -1,6 +1,3 @@
-## `04-webinar-content-pipeline/README.md`
-
-````markdown
 # 04 · Webinar Content Pipeline
 
 ## Problem
@@ -24,6 +21,11 @@ document feeds a derivation chain producing the full asset set:
 | 6 | Follow-up email — attendee + no-show variants | post |
 | 7 | Recap post | post |
 
+**Published in this repo: specs 1-4.** Assets 5-7 run on the same fan-out
+pattern with a different source of truth, and the pattern is documented in
+`promo-content-prompt.md` — but their specs are not published here. The
+impact figure below counts only what you can run from this folder.
+
 Same evidence-first contract as workflow 01: pre-session assets derive
 from the **session brief** (single source of truth, written before
 anything is promoted); post-session assets derive from the final
@@ -38,7 +40,8 @@ everywhere else in this repo: narrow per-asset calls, verbatim-claim
 rules, one source of truth.
 
 ## Measured impact
-- 7 assets per session at near-zero incremental writing
+- 4 published pre-session assets per session at near-zero incremental
+  writing (7 in the full pipeline)
 - Follow-up assets shipped same-day instead of the following week
 
 ## Files
@@ -46,7 +49,7 @@ rules, one source of truth.
 | File | What it is |
 |---|---|
 | `session-brief-template.md` | Input contract — the single source of truth for all pre-session assets |
-| `promo-content-prompt.md` | Pre-session derivation prompt + acceptance criteria + troubleshooting (representative; post-session prompts follow the identical structure) |
+| `promo-content-prompt.md` | Pre-session derivation prompt (specs 1-4) + acceptance criteria + troubleshooting; assets 5-7 are described but not specced |
 
 ## Acceptance criteria (assets are shippable when...)
 
@@ -64,6 +67,3 @@ rules, one source of truth.
 else reads.
 
 *All data in this folder is synthetic.*
-````
-
----

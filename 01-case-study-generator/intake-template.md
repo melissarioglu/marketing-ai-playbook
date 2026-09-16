@@ -1,6 +1,3 @@
-##  `01-case-study-generator/intake-template.md`
-
-````markdown
 # Intake Template — what Stage 1 should receive
 
 Garbage in, invented narrative out. If a field is unknown, write
@@ -33,4 +30,3 @@ value is not a result — it will be excluded by the verification gate.
 
 Below that, collect more input first — see Troubleshooting #1 in
 [prompt-chain.md](prompt-chain.md).
-````
