@@ -1,4 +1,4 @@
-## 📄 Dosya 5/22 — `01-case-study-generator/intake-template.md`
+##  `01-case-study-generator/intake-template.md`
 
 ````markdown
 # Intake Template — what Stage 1 should receive
