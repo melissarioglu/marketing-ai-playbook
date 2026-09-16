@@ -54,8 +54,4 @@ inventions don't.**
    organization hasn't approved.
 2. Every output passes a human gate before it ships.
 3. If a claim can't be traced to the input, it doesn't ship.
-````
 
----
-
-**Devam** de → `CHANGELOG.md` geliyor.
